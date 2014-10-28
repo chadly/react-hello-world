@@ -2,7 +2,10 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		browserify: {
 			options: {
-				transform: ['reactify']
+				transform: ['reactify'],
+				browserifyOptions: {
+					debug: true
+				}
 			},
 			dist: {
 				files: {
