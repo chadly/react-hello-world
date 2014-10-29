@@ -1,6 +1,7 @@
 var React = require('react');
 var Message = require('./message');
 var Input = require('./input');
+var Time = require('./time');
 
 module.exports = React.createClass({
 	getInitialState: function() {
@@ -13,7 +14,8 @@ module.exports = React.createClass({
 		return (
 			<div>
 				<Input name={this.state.name} onNameChange={this.onNameChange} />
-				<Message name={this.state.name} date={new Date()} />
+				<Message name={this.state.name} />
+				<Time />
 			</div>
 		);
 	}

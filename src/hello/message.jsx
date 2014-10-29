@@ -5,7 +5,6 @@ module.exports = React.createClass({
 		return (
 			<p>
 				Hello, {this.props.name}!
-				It is {this.props.date.toTimeString()}.
 			</p>
 		);
 	}
