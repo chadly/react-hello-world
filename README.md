@@ -5,4 +5,4 @@ npm install
 grunt
 ```
 
-Then open `src/index.html` in a browser.
+Then open `index.html` in a browser.

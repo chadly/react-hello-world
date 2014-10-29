@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'src/build.js': ['src/main.jsx', '!src/build.js']
+					'build.js': ['main.jsx']
 				}
 			}
 		}
