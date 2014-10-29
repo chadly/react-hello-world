@@ -2,7 +2,7 @@
   "name": "react-hello-world",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.js",
+  "main": "main.jsx",
   "author": "Chad Lee",
   "license": "MIT",
   "dependencies": {
