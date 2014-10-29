@@ -1,12 +1,13 @@
 var React = require('react');
+var moment = require('moment');
 
 module.exports = React.createClass({
 	getInitialState: function() {
-		return { time: new Date() };
+		return { time: moment() };
 	},
 	componentDidMount: function() {
 		this.interval = setInterval(function() {
-			this.setState({ time: new Date()});
+			this.setState({ time: moment() });
 		}.bind(this), 500);
 		console.log("setting");
 	},
@@ -18,7 +19,7 @@ module.exports = React.createClass({
 	},
 	render: function() {
 		return (
-			<p>It is {this.state.time.toTimeString()}.</p>
+			<p>It is {this.state.time.format('h:mm:ss a')}.</p>
 		);
 	}
 });
