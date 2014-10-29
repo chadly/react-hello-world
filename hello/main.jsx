@@ -5,7 +5,7 @@ var Time = require('./time');
 
 module.exports = React.createClass({
 	getInitialState: function() {
-		return { name: "Homer Simpson" };
+		return { name: "" };
 	},
 	onNameChange: function(newName) {
 		this.setState({ name: newName });
