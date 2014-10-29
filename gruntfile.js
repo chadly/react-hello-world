@@ -4,12 +4,13 @@ module.exports = function(grunt) {
 			options: {
 				transform: ['reactify'],
 				browserifyOptions: {
-					debug: true
+					debug: true,
+					extensions: [".jsx"]
 				}
 			},
 			dist: {
 				files: {
-					'src/build.js': ['src/main.js', '!src/build.js']
+					'src/build.js': ['src/main.jsx', '!src/build.js']
 				}
 			}
 		}
