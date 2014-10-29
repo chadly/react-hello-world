@@ -14,8 +14,10 @@ module.exports = React.createClass({
 		return (
 			<div>
 				<Input name={this.state.name} onNameChange={this.onNameChange} />
-				<Message name={this.state.name} />
-				<Time />
+				<p>
+					<Message name={this.state.name} />&nbsp;
+					<Time />
+				</p>
 			</div>
 		);
 	}

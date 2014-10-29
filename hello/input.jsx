@@ -10,7 +10,7 @@ module.exports = React.createClass({
 		return (
 			<p>
 				<label>
-					Enter your name:
+					Enter your name:&nbsp;
 					<input type="text" placeholder="Your name here" value={this.props.name} onChange={this.onNameChange} />
 				</label>
 			</p>

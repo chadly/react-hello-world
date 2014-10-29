@@ -19,7 +19,7 @@ module.exports = React.createClass({
 	},
 	render: function() {
 		return (
-			<p>It is {this.state.time.format('h:mm:ss a')}.</p>
+			<span>It is {this.state.time.format('h:mm:ss a')}.</span>
 		);
 	}
 });
