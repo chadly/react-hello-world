@@ -9,12 +9,10 @@ module.exports = React.createClass({
 		this.interval = setInterval(function() {
 			this.setState({ time: moment() });
 		}.bind(this), 500);
-		console.log("setting");
 	},
 	componentWillUnmount: function() {
 		if(this.interval) {
 			clearInterval(this.interval);
-			console.log("clearing");
 		}
 	},
 	render: function() {
