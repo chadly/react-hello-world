@@ -1,22 +1,27 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
-		browserify: {
+		webpack: {
 			options: {
-				transform: ['reactify'],
-				browserifyOptions: {
-					debug: true,
-					extensions: [".jsx"]
+				module: {
+					loaders: [{
+						test: /\.jsx$/,
+						loader: "jsx-loader"
+					}]
+				},
+				resolve: {
+					extensions: ['', '.jsx', '.js', '.json']
 				}
 			},
 			dist: {
-				files: {
-					'build.js': ['main.jsx']
+				entry: "./main",
+				output: {
+					filename: "build.js"
 				}
 			}
 		}
 	});
 
-	grunt.loadNpmTasks("grunt-browserify");
+	grunt.loadNpmTasks("grunt-webpack");
 
-	grunt.registerTask("default", ["browserify"]);
+	grunt.registerTask("default", ["webpack"]);
 };
