@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 				},
 				resolve: {
 					extensions: ['', '.jsx', '.js', '.json']
-				}
+				},
+				devtool: "#inline-source-map"
 			},
 			dist: {
 				entry: "./main",
